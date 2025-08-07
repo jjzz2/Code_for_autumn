@@ -1,0 +1,17 @@
+<html>
+<body>
+<div id="app">Hello DOM</div>
+
+<script>
+    const el = document.getElementById('app');
+    console.log(el.innerHTML); // 输出 "Hello DOM"
+    //动态获取dom元素
+
+    //获取其的样式为submit的按钮
+    const button=document.querySelectorAll('#submit')
+    button.addEventListener('click',()=>{
+        alert('已经点击按钮')
+    })
+</script>
+</body>
+</html>

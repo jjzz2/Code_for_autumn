@@ -1,0 +1,21 @@
+const { JSDOM } = require('jsdom');
+<html  lang="zh">
+<ul id="parent">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+</ul>
+</html>
+<script>
+// 获取父元素
+const parent = document.getElementById('parent');
+
+// 给父元素添加事件监听器
+parent.addEventListener('click', function(event) {
+// 判断事件目标是否是一个 <li> 元素
+    if (event.target.tagName === 'LI') {
+    console.log('点击了:', event.target.textContent);
+    }
+});
+</script>

@@ -1,0 +1,26 @@
+<div class="box">
+    <div class="left">左边</div>
+    <div class="middle">中间</div>
+    <div class="right">右边</div>
+</div>
+<style>
+    .box{
+        display: flex;
+        justify-content: space-between;
+        height: 200px;
+    }
+    .left{
+        width: 200px;
+        background-color: aliceblue;
+    }
+    .right{
+        width: 200px;
+        background-color: antiquewhite;
+    }
+    .middle{
+        flex-grow: 1;
+        height: 100%;  /* 确保中间栏高度和父容器一致 */
+        background-color: aqua;
+    }
+
+</style>

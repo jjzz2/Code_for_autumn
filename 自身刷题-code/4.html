@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>移动端上中下布局</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      height: 100%;
+    }
+    .header, .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    .main {
+      flex-grow: 1;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>顶部</h1>
+  </div>
+  <div class="main">
+    <h2>主体内容</h2>
+    <p>这里是中间部分，通常是页面的主体内容区域。</p>
+  </div>
+  <div class="footer">
+    <h3>底部</h3>
+  </div>
+</div>
+</body>
+</html>
