@@ -5,8 +5,8 @@ import NotesCard from '../notes-card'
 import PayDepositCard from '../pay-deposit-card'
 
 export const CardFactory = ({ message, position }) => {
-    const {base,ext}=message;
-        const tipRender = (message) => {
+    const { base, ext } = message;
+    const tipRender = (message) => {
         return (
             <>
                 {message.base.bidStateMsg ? (
@@ -18,5 +18,6 @@ export const CardFactory = ({ message, position }) => {
             </>
         )
     }
+    
 }
 export default CardFactory;

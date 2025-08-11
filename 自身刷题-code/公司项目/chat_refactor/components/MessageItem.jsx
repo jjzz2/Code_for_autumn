@@ -16,18 +16,6 @@ const MessageItem = ({ message }) => {
             return PositionEnum.RIGHT;
         }
     }, [message.fromUid, assistantId])
-    const tipRender = (message) => {
-        return (
-            <>
-                {message.base.bidStateMsg ? (
-                    <MiddleTip card={1} prefixText={message.base.bidStateMsg} />
-                ) : null}
-                {message.base.messageTip ? (
-                    <MiddleTip card={2} prefixText={message.base.message} />
-                ) : null}
-            </>
-        )
-    }
     return (
         <>
             {tipRender(message)}
