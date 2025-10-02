@@ -22,8 +22,9 @@ function myCall(context,args){
     context=context||window
     let fnSymbol=Symbol('fn')
     context[fnSymbol]=this
-    context[fnSymbol](...args)
+    let result= context[fnSymbol](...args)
     delete context[fnSymbol]
+    return result
 }
 function myApply(context,args){
     context=context||window
@@ -120,7 +121,6 @@ function filter2(array){
 }
 function filter3(array){
     return array.reduce((acc,cur)=>{
-        if ()
     })
 }
 //数据判断
